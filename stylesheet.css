@@ -1,0 +1,4073 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    
+}
+.form-container{
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+.form-container input[type=text], .form-container input[type=password]{
+    width: 100%; 
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background-color: #f1f1f1;
+}
+.form-container input[type=text]:focus, .form-container input[type=password]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+.form-container .btn{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 18px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8; 
+}
+.form-container .cancel{
+    background-color: red;
+}
+.form-container .btn:hover{
+    opacity: 1;
+}
+h1, label{
+    color: #000000;
+}
+/* ------------------------------------------ */
+html{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+    
+}
+/*_______________________________________________________________________________________________________*/
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 200px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+}
+.content{
+    background-color: darkgreen;
+    padding: 2px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.market{
+    color: white;
+    margin-left: 30px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: #000000;
+    padding: 5px;
+    width: 18%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 10%;
+top: 115px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.1);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/*_______________________________________________________________________________________________________*/
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 200px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+    font-size: xx-small;
+}
+.content{
+    background-color: darkgreen;
+    padding: 1px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: xx-small;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: -5px;
+    margin-right: 1px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+    margin-left: -40px;
+}
+.market{
+    color: white;
+    margin-left: -15px;
+    font-weight: normal;
+    font-size: xx-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 150%;
+    padding: 10px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: white;
+    padding: 5px;
+    width: 70%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: small;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 1%;
+top: 115px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 10px; 
+margin-right: 10px; 
+border-radius: 5px; 
+height: 30px; 
+margin-bottom: 10px;
+}
+}
+/*_______________________________________________________________________________________________________*/
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 250px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+    font-size: xx-small;
+}
+.content{
+    background-color: darkgreen;
+    padding: 1px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
+    font-size: xx-small;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+    margin-left: -30px;
+}
+.market{
+    color: white;
+    margin-left: -10px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 1px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: #000000;
+    padding: 5px;
+    width: 80%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 1%;
+top: 150px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/*_______________________________________________________________________________________________________*/
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 300px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+    font-size: xx-small;
+}
+.content{
+    background-color: darkgreen;
+    padding: 1px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: -4px;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
+    font-size: xx-small;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+    margin-left: -30px;
+}
+.market{
+    color: white;
+    margin-left: -19px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: white;
+    padding: 5px;
+    width: 18%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 1%;
+top: 130px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/*_______________________________________________________________________________________________________*/
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 350px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+    font-size: small;
+}
+.content{
+    background-color: darkgreen;
+    padding: 1px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
+    font-size: x-small;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.market{
+    color: white;
+    margin-left: -10px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: white;
+    padding: 5px;
+    width: 18%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 10%;
+top: 130px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/*_______________________________________________________________________________________________________*/
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 400px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+}
+.content{
+    background-color: darkgreen;
+    padding: 1px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.market{
+    color: white;
+    margin-left: 1px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: white;
+    padding: 5px;
+    width: 18%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 20%;
+top: 150px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/*_______________________________________________________________________________________________________*/
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 450px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+}
+.content{
+    background-color: darkgreen;
+    padding: 2px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.market{
+    color: white;
+    margin-left: -1px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: white;
+    padding: 5px;
+    width: 18%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 30%;
+top: 150px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/*_______________________________________________________________________________________________________*/
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 500px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 2px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+    font-size: small;
+}
+.content{
+    background-color: darkgreen;
+    padding: 1px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
+    font-size: xx-small;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: -4px;
+    margin-right: 2px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+    margin-left: -30px;
+}
+.market{
+    color: white;
+    margin-left: -5px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 5px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: white;
+    padding: 5px;
+    width: 18%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 30%;
+top: 115px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/*_______________________________________________________________________________________________________*/
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 600px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    word-spacing: 2px;
+}
+.content{
+    background-color: darkgreen;
+    padding: 1px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: x-small;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.market{
+    color: white;
+    margin-left: -15px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: white;
+    padding: 5px;
+    width: 18%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 45%;
+top: 115px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/*_______________________________________________________________________________________________________*/
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 650px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+}
+.content{
+    background-color: darkgreen;
+    padding: 1px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: x-small;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.market{
+    color: white;
+    margin-left: -10px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: white;
+    padding: 5px;
+    width: 18%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 50%;
+top: 115px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/*_______________________________________________________________________________________________________*/
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 700px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+}
+.content{
+    background-color: darkgreen;
+    padding: 1px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: x-small;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.market{
+    color: white;
+    margin-left: -5px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: white;
+    padding: 5px;
+    width: 19%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 50%;
+top: 115px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/*_______________________________________________________________________________________________________*/
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 767px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+}
+.content{
+    background-color: darkgreen;
+    padding: 2px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.market{
+    color: white;
+    margin-left: 1px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: white;
+    padding: 5px;
+    width: 18%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 50%;
+top: 115px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 792px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+}
+.content{
+    background-color: darkgreen;
+    padding: 2px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.market{
+    color: white;
+    margin-left: 1px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: white;
+    padding: 5px;
+    width: 18%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 50%;
+top: 115px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 892px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+    font-size: large;
+}
+.content{
+    background-color: darkgreen;
+    padding: 2px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.market{
+    color: white;
+    margin-left: 1px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.8);
+    color: white;
+    padding: 5px;
+    width: 16%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 55%;
+top: 115px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+}
+.content{
+    background-color: darkgreen;
+    padding: 1px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.market{
+    color: white;
+    margin-left: 1px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: white;
+    padding: 5px;
+    width: 10%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+display: none;
+position: fixed;
+left: 20%;
+top: 100px;
+width: 70%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.contact{
+font-size: x-large;
+}
+.descript{
+height: 100px;
+width: 100px;
+font-weight: normal;
+font-size: small;
+}
+.text{
+text-align: left;
+font-weight: bold;
+font-size: large;
+padding: 20px;
+display: inline-table;
+}
+.get{
+font-weight: bold;
+}
+.input{
+color: white;
+border: none;
+margin-bottom: 10px;
+width: 150%;
+outline: none;
+background-color: black;
+height: 30px;
+}
+/*style foe about portion	*/
+.form_popup{
+display: none;
+position: fixed;
+left: 40%;
+top: 170px;
+width: 30%;
+border-radius: 0px;
+background-color: #016064;
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+aside{
+display: inline-table;
+text-align: center;
+font-weight: bold;
+padding: 10px;
+}
+.cont{
+height: 100px;
+width: 100px;
+font-weight: normal;
+text-align: justify;
+}
+/*style foe about signin form	*/
+::placeholder{
+color: white;
+padding: 5px;
+}
+.form_sign{
+display: none;
+position: fixed;
+left: 60%;
+top: 115px;
+border-radius: 0px;
+background-color: rgb(50, 50, 50, 0.7);
+border: 1px solid #f1f1f1;
+z-index: 5;
+border-radius: 5px;
+color: white;
+}
+.icon{
+font-size: 300%;
+margin-bottom: 10px;
+}
+.in{
+color: white;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+width: 80%;
+outline: none;
+background-color: rgb(50, 50, 50, 0.3);
+}
+.btn{
+padding: 10px;
+background-color: white;
+color: black;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+.btn:hover{
+background-color: green;
+color: white;
+}
+.for{
+border: 1px solid; 
+background: rgb(50, 50, 50, 0.7); 
+margin-left: 45px; 
+margin-right: 45px; 
+border-radius: 5px; 
+height: 40px; 
+margin-bottom: 10px;
+}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.nav{
+    margin-top: -10px;
+}
+.head{
+    background-color: green;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+}
+.content{
+    background-color: darkgreen;
+    padding: 1px;
+}
+*{
+    list-style: none;
+}
+ul li{
+    display: inline-table;
+    font-weight: bold;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.active{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+.OR{
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.market{
+    color: white;
+    margin-left: 1px;
+    font-weight: normal;
+    font-size: x-small;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.arrow{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: darkgreen;
+}
+#body{
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    animation: move 40s infinite;
+}
+@keyframes move {
+    from {
+        background: url('img/back.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+    to{background: url('img/ba.jpg');
+        background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right;
+    }
+}
+.message{
+    background-color: rgb(50, 50, 50, 0.1);
+}
+.display{
+    font-weight: bold;
+    font-size: 220%;
+    padding: 50px;
+}
+.lineone{
+    color: red;
+    font-family: serif;
+}
+.below{
+    font-size: large;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: white;
+    padding: 5px;
+    width: 10%;
+    border-radius: 5px;
+}
+.got{
+    font-size: small;
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: black;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+    border-radius: 5px;
+}
+i:hover{
+    background-color: rgb(50, 50, 50, 0.5);
+}
+/* STYLE FOR CONTACT PORTION	*/
+.form_contact{
+    display: none;
+    position: fixed;
+    left: 20%;
+    top: 100px;
+    width: 70%;
+    border-radius: 0px;
+    background-color: #016064;
+    border: 1px solid #f1f1f1;
+    z-index: 5;
+    border-radius: 5px;
+    color: white;
+    }
+    .contact{
+        font-size: x-large;
+    }
+    .descript{
+        height: 100px;
+        width: 100px;
+        font-weight: normal;
+        font-size: small;
+    }
+    .text{
+        text-align: left;
+        font-weight: bold;
+        font-size: large;
+        padding: 20px;
+        display: inline-table;
+    }
+    .get{
+        font-weight: bold;
+    }
+    .input{
+        color: white;
+        border: none;
+        margin-bottom: 10px;
+        width: 150%;
+        outline: none;
+        background-color: black;
+        height: 30px;
+    }
+    /*style foe about portion	*/
+        .form_popup{
+    display: none;
+    position: fixed;
+    left: 40%;
+    top: 170px;
+    width: 30%;
+    border-radius: 0px;
+    background-color: #016064;
+    border: 1px solid #f1f1f1;
+    z-index: 5;
+    border-radius: 5px;
+    color: white;
+    }
+    aside{
+        display: inline-table;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .cont{
+        height: 100px;
+        width: 100px;
+        font-weight: normal;
+        text-align: justify;
+    }
+    /*style foe about signin form	*/
+    ::placeholder{
+        color: white;
+        padding: 5px;
+    }
+        .form_sign{
+    display: none;
+    position: fixed;
+    left: 77%;
+    top: 115px;
+    border-radius: 0px;
+    background-color: rgb(50, 50, 50, 0.7);
+    border: 1px solid #f1f1f1;
+    z-index: 5;
+    border-radius: 5px;
+    color: white;
+    }
+    .icon{
+        font-size: 300%;
+        margin-bottom: 10px;
+    }
+    .in{
+        color: white;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px;
+        width: 80%;
+        outline: none;
+        background-color: rgb(50, 50, 50, 0.3);
+    }
+    .btn{
+        padding: 10px;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        margin-top: 10px;
+    }
+    .btn:hover{
+        background-color: green;
+        color: white;
+    }
+    .for{
+        border: 1px solid; 
+        background: rgb(50, 50, 50, 0.7); 
+        margin-left: 45px; 
+        margin-right: 45px; 
+        border-radius: 5px; 
+        height: 40px; 
+        margin-bottom: 10px;
+    }
+}
+
+/* registration form style  */
+#my-register {
+    display: none;
+}
